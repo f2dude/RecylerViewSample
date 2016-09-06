@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements StringResponse, R
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        adapter = new ModelAdapter(dataList);
+        adapter = new ModelAdapter(dataList, this);
         recyclerView.setAdapter(adapter);
 
         RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(this, LinearLayoutManager.VERTICAL);
